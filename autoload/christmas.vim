@@ -95,8 +95,8 @@ function! s:show_tree() abort
 endfunction
 
 function! s:starlight(timer) abort
-  let snow_color = s:snow_colors[rand(srand()) % s:snow_colors_len]
-  exe 'hi SnowStar ctermfg=' .. snow_color
+  let star_color = s:snow_colors[rand(srand()) % s:snow_colors_len]
+  exe 'hi SnowStar ctermfg=' .. star_color
   call win_execute(s:tree_window, 'syntax match SnowStar /[☆ﾟ‥：・｡∴]/')
 endfunction
 
@@ -132,9 +132,10 @@ function! christmas#end() abort
 endfunction
 
 function! christmas#start() abort
-  if s:state is# 'stated'
+  if s:state is# 'started'
     return
   endif
+  let s:state = 'started'
   call s:define_highlight()
   call s:show_tree()
 
