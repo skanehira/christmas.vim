@@ -46,7 +46,7 @@ function! s:new_snow(timer) abort
         \ 'col': col,
         \ 'line': s:tree_window_pos.line,
         \ 'minwidth': 1,
-        \ 'zindex': r,
+        \ 'zindex': 200,
         \ })
 
   call win_execute(winid, 'syntax match Snow /[＋十＊*]/')
