@@ -1,4 +1,4 @@
-# christmas
+# christmas.vim
 Merry Christmas!
 
 NOTE: Only works on Vim8.2~
