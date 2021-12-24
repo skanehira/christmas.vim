@@ -5,7 +5,7 @@
 let s:snows = ['＋', '十', '＊', '*']
 let s:snows_len = len(s:snows)
 let s:snow_colors = [
-      \ 11,
+      \ 226,
       \ 255,
       \ 129,
       \ 13,
